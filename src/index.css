@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #22d3ee;
+  --color-accent-dim: rgba(34, 211, 238, 0.15);
+  --color-surface: #0a0e14;
+  --color-surface-light: #0f1218;
+  --color-surface-card: #12161e;
+  --color-surface-border: #1a1f2e;
+  --color-text-primary: #e2e4ea;
+  --color-text-secondary: #7d829a;
+  --color-text-muted: #3e4358;
+  --color-keyword: #c678dd;
+  --color-string: #98c379;
+  --color-comment: #5c6370;
+  --color-func: #61afef;
+  --color-number: #d19a66;
+  --font-mono: "JetBrains Mono", "Fira Code", "SF Mono", ui-monospace, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-surface-border) transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+}
+
+.bg-dot-grid {
+  background-image: radial-gradient(circle, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
