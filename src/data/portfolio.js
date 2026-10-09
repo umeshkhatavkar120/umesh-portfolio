@@ -1,3 +1,6 @@
+import profileImage from "../assets/umesh-khatavkar.jpeg";
+import resumePath from "../assets/Umesh-Khatavkar-Resume.pdf";
+
 export const profile = {
   name: "Umesh Khatavkar",
   title: "Tech Lead | Senior Backend Engineer",
@@ -6,8 +9,8 @@ export const profile = {
     "Backend-focused Tech Lead with 8+ years of experience designing and delivering scalable enterprise applications across fintech and edtech domains. Expertise in Node.js, Express.js, Python, FastAPI, PostgreSQL, AWS, Docker, Microservices, and System Design.",
   shortSummary:
     "Backend-focused Tech Lead with 8+ years of experience building scalable enterprise applications across fintech and edtech.",
-  resumePath: "./src/assets/Umesh-Khatavkar-Resume.pdf",
-  profileImage: "./src/assets/umesh-khatavkar.jpeg",
+  resumePath,
+  profileImage,
   rotatingRoles: [
     "Backend Engineer",
     "Tech Lead",
